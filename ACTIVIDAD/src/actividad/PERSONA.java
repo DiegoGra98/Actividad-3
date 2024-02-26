@@ -25,7 +25,24 @@ public class PERSONA {
         System.out.println("Ingrese su fecha de nacimiento: ");
         FechaNac = scanner.nextLine();
         scanner.close();
-        System.out.print(Nombre+" "+Apellido+" "+Direccion+" "+Telefono+" "+FechaNac);
+    }
+
+    public void leer(){
+        System.out.print(Nombre+"\n"+Apellido+"\n"+Direccion+"\n"+Telefono+"\n"+FechaNac);
+    }
+
+    public void actualizar(){
+        System.out.println("Ingrese nuevo nombre: ");
+        Nombre = scanner.nextLine();
+        System.out.println("Ingrese nuevo apellido: ");
+        Apellido = scanner.nextLine();
+        System.out.println("Ingrese nueva direccio: ");
+        Direccion = scanner.nextLine();
+        System.out.println("Ingrese nuevo telefono: ");
+        Telefono = scanner.nextLine();
+        System.out.println("Ingrese nueva fecha de nacimiento: ");
+        FechaNac = scanner.nextLine();
+        scanner.close();
     }
 
 }
