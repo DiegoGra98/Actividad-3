@@ -4,19 +4,14 @@ import java.util.Scanner;
 
 public class CLIENTE {
 
-    String nit = "";
-    Scanner scanner = new Scanner(System.in);
+   private String  nit = "";
 
-    public void ingresarNit() {
-        System.out.println("Ingrese su nit: ");
-        nit = scanner.nextLine();
-        // System.out.print(nit);
-        System.out.println("nit ingresado correctamente");
+    public String getNit() {
+        return nit;
     }
 
-    public static void main(String[] args) {
-        CLIENTE objP = new CLIENTE();
-        objP.ingresarNit();
+    public void setNit(String nit) {
+        this.nit = nit;
     }
-
+    
 }
